@@ -1,0 +1,13 @@
+.layout-auth__footer,
+.layout-auth__main {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.layout-auth__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  place-content: center;
+  padding-inline: 50px;
+}

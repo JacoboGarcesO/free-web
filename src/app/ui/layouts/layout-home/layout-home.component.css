@@ -1,0 +1,12 @@
+.layout-home__footer section,
+.layout-home__main section,
+.layout-home__header section {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-inline: 30px;
+}
+
+.layout-home__footer,
+.layout-home__header {
+  background-color: var(--color-500);
+}

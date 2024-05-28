@@ -1,0 +1,13 @@
+.footer-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  a, span {
+    text-decoration: none;
+    color: var(--color-950);
+    font-weight: 400;
+    font-size: 12px;
+  }
+}

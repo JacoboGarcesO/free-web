@@ -1,0 +1,11 @@
+.footer {
+  padding-block: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  color: var(--color-50);
+  font-size: 14px;
+}

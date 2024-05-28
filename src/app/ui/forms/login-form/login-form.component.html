@@ -1,0 +1,35 @@
+<form class="login-form" [formGroup]="form" (ngSubmit)="handleForm()">
+  <h1>Please login!</h1>
+  <fieldset class="login-form__section">
+    <legend class="login-form__legend">Enter your credentials</legend>
+    @if (error) {
+      <span class="login-form__error">{{error}}</span>
+    }
+    <label class="login-form__label">
+      <span>
+        Email
+      </span>
+      <input type="text" formControlName="email">
+    </label>
+    @if (form.controls.email.touched) {
+      @for (item of emailErrors; track $index) {
+        <span class="login-form__errors">{{item}}</span>
+      }
+    }
+    <label class="login-form__label">
+      <span>
+        Password
+      </span>
+      <input type="password" formControlName="password">
+    </label>
+    @if (form.controls.password.touched) {
+      @for (item of passwordErrors; track $index) {
+        <span class="login-form__errors">{{item}}</span>
+      }
+    }
+  </fieldset>
+  <button class="login-form__button">Login</button>
+  @if (isLoading) {
+    Cargando...
+  }
+</form>
